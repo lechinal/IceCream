@@ -2,20 +2,20 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/sutonium87/IC-Group-4",
+  "homepage": "https://github.com/lechinal/IceCream",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /IC-Group-4/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sutonium87/IC-Group-4.git"
+    "url": "git+https://github.com/lechinal/IceCream.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sutonium87/IC-Group-4/issues"
+    "url": "https://github.com/lechinal/IceCream/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
