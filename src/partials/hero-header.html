@@ -1,0 +1,255 @@
+<!--Hero-Header-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hero-header</title>
+  </head>
+  <body>
+    <section class="hero-header" id="hero-header">
+      <div class="hero-header__container container">
+        <!-- Header section -->
+
+        <div class="header">
+          <div class="header__container">
+            <div class="header__logo">
+              <a href="#" aria-label="Read more about Seminole tax hike">
+                <svg width="199" height="50">
+                  <use
+                    href="images/hero-header/hero-header-images.svg#logo"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link menu__link--active" href="#hero-header"
+                    >Home</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#about">About us</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#advantages">How it’s made?</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#products">Our products</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#contacts">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="buttons-container">
+              <button
+                class="menu-toggle js-open-menu"
+                title="hero-header button"
+              >
+                <svg class="menu-toggle__svg" width="20" height="12">
+                  <use
+                    href="images/hero-header/hero-header-images.svg#modal-open-btn"
+                  ></use>
+                </svg>
+              </button>
+              <button type="button" class="button__buy">
+                Buy now
+                <svg class="button__svg" width="4" height="8">
+                  <use
+                    href="images/hero-header/hero-header-images.svg#Vector-1"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu-->
+          <div class="js-menu-container nav-tools" id="menu-nav">
+            <button
+              type="button"
+              class="js-close-menu nav-tools__close-button"
+              title="header-hero button"
+            >
+              <svg width="14" height="14">
+                <use
+                  href="images/hero-header/hero-header-images.svg#close-menu"
+                ></use>
+              </svg>
+            </button>
+            <button type="button" class="nav-tools__button">
+              Buy now
+              <svg class="button-svg" width="4" height="8">
+                <use
+                  href="images/hero-header/hero-header-images.svg#Vector-1"
+                ></use>
+              </svg>
+            </button>
+            <nav class="menu-nav">
+              <ul class="menu-nav__list">
+                <li class="menu-nav__item">
+                  <a
+                    class="menu-nav__link menu-nav__link--active"
+                    href="#hero-header"
+                    >Home</a
+                  >
+                </li>
+                <li class="menu-nav__item">
+                  <a class="menu-nav__link" href="#about">About us</a>
+                </li>
+                <li class="menu-nav__item">
+                  <a class="menu-nav__link" href="#advantages"
+                    >How it’s made?</a
+                  >
+                </li>
+                <li class="menu-nav__item">
+                  <a class="menu-nav__link" href="#products">Our products</a>
+                </li>
+                <li class="menu-nav__item">
+                  <a class="menu-nav__link" href="#contacts">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero">
+          <div class="hero__container">
+            <div class="hero__container-left">
+              <h1 class="hero__title">
+                ice cream <br />made with<br />
+                <span class="hero__title--passion">passion</span>
+              </h1>
+              <div class="hero-btn">
+                <a class="hero-btn__products" href="./partials/products.html">
+                  Products
+                </a>
+                <a
+                  class="hero-btn__products--made"
+                  href="./partials/about.html"
+                >
+                  How it’s made?
+                </a>
+              </div>
+              <div class="hero__bio-container">
+                <picture class="hero__milk-pic">
+                  <source
+                    media="screen and (min-width: 1200px)"
+                    srcset="
+                      images/hero-header/milk-D.png    1x,
+                      images/hero-header/milk-D-x2.png 2x
+                    "
+                  />
+
+                  <source
+                    media="screen and (min-width: 768px)"
+                    srcset="
+                      images/hero-header/milk-T.png    1x,
+                      images/hero-header/milk-T-x2.png 2x
+                    "
+                  />
+
+                  <img
+                    src="images/hero-header/milk-T.png"
+                    alt="IceCream milk"
+                  />
+                </picture>
+                <div class="hero-bio-eco">
+                  <p class="hero-bio-eco__text">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipiscing elit,<br />
+                    sed do eiusmod tempor<br />
+                    incididunt ut labore et
+                  </p>
+                  <picture class="hero-bio-eco__arrow-right">
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        images/hero-header/arrow-right-D.png    1x,
+                        images/hero-header/arrow-right-D-x2.png 2x
+                      "
+                    />
+
+                    <source
+                      media="screen and (min-width: 768px)"
+                      srcset="
+                        images/hero-header/arrow-right-T.png    1x,
+                        images/hero-header/arrow-right-T-x2.png 2x
+                      "
+                    />
+                    <img
+                      src="images/hero-header/arrow-right-D.png"
+                      alt="IceCream"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="hero__container-right">
+              <div class="hero__svg-container">
+                <svg class="hero__svg-right-16" width="43" height="44">
+                  <use
+                    href="images/hero-header/hero-header-images.svg#Group-22"
+                  ></use>
+                </svg>
+                <svg class="hero__svg-right-23" width="51" height="43">
+                  <use
+                    href="images/hero-header/hero-header-images.svg#Group-23"
+                  ></use>
+                </svg>
+              </div>
+              <picture class="hero__girl-icecream">
+                <source
+                  media="screen and (min-width: 1200px)"
+                  srcset="
+                    images/hero-header/girl-icecream-D.png    1x,
+                    images/hero-header/girl-icecream-D-x2.png 2x
+                  "
+                />
+                <source
+                  media="screen and (min-width: 768px)"
+                  srcset="
+                    images/hero-header/girl-icecream-T.png    1x,
+                    images/hero-header/girl-icecream-T-x2.png 2x
+                  "
+                />
+                <img
+                  src="images/hero-header/girl-icecream-D.png"
+                  alt="IceCream"
+                />
+              </picture>
+            </div>
+          </div>
+          <picture class="hero__icecream-pic">
+            <source
+              media="screen and (min-width: 1200px)"
+              srcset="
+                images/hero-header/ice-cream-D.png    1x,
+                images/hero-header/ice-cream-D-x2.png 2x
+              "
+            />
+            <source
+              media="screen and (min-width: 768px)"
+              srcset="
+                images/hero-header/ice-cream-T.png    1x,
+                images/hero-header/ice-cream-T-x2.png 2x
+              "
+            />
+            <source
+              media="screen and (max-width: 767px)"
+              srcset="
+                images/hero-header/ice-cream-M.png    1x,
+                images/hero-header/ice-cream-M-x2.png 2x
+              "
+            />
+            <img src="images/hero-header/ice-cream-D.png" alt="IceCream" />
+          </picture>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

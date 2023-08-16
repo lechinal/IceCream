@@ -1,0 +1,118 @@
+<!--About-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+  </head>
+  <body>
+    <section class="section section-about" id="about">
+      <h1 hidden>About section</h1>
+      <div class="container about">
+        <p class="section-about__lable">tradition and love</p>
+        <h2 class="section-about__title">how it’s made?</h2>
+        <div class="section-about__main">
+          <div class="section-about__image-content">
+            <picture>
+              <!-- for desktop -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  /src/images/laptop/laptop-cow-with-milk.webp    1x,
+                  /src/images/laptop/laptop-cow-with-milk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  /src/images/laptop/laptop-cow-with-milk.png    1x,
+                  /src/images/laptop/laptop-cow-with-milk@2x.png 2x
+                "
+                type="image/jpg"
+              />
+
+              <!-- for tablet -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  /src/images/tablet/tablet-cow-with-milk.webp    1x,
+                  /src/images/tablet/tablet-cow-with-milk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  /src/images/tablet/tablet-cow-with-milk.png    1x,
+                  /src/images/tablet/tablet-cow-with-milk@2x.png 2x
+                "
+                type="image/jpg"
+              />
+
+              <!-- for mobile -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  /src/images/mobile/mobile-cow-with-milk.webp    1x,
+                  /src/images/mobile/mobile-cow-with-milk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  /src/images/mobile/mobile-cow-with-milk.png    1x,
+                  /src/images/mobile/mobile-cow-with-milk@2x.png 2x
+                "
+                type="image/png"
+              />
+              <!-- default device type-->
+              <img
+                class="section-about__image"
+                src="/src/images/mobile/mobile-cow-with-milk.png"
+                alt="cow milk"
+                width="280"
+                height="279"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="section-about__body">
+            <p class="section-about__text-desc">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+              erat at justo fringilla.
+            </p>
+
+            <p class="section-about__text-lead">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio
+              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+              Cras massa nibh, tincidunt.
+            </p>
+
+            <p class="section-about__text-tagline">
+              Aliquam erat volutpat. Aenean accumsan.
+            </p>
+            <button
+              type="button"
+              class="section-about__button"
+              data-modal-open-2
+            >
+              Read more
+              <svg class="section-about__icon" width="8" height="10">
+                <use href="/src/images/sprite.svg#icon-icon-arrow-pink"></use>
+              </svg>
+            </button>
+            <div class="section-about__backdrop is-hidden" data-modal-2></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

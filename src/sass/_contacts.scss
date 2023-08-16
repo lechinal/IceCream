@@ -1,0 +1,324 @@
+* {
+  font-weight: var(--brand-font-weight);
+  letter-spacing: var(--brand-letter-spacing);
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --brand-color-background2: #c2e297;
+  --brand-color-background3: #f0d1a5;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 22%,
+    rgba(255, 245, 246, 1) 0%
+  );
+  padding-bottom: 40px;
+
+  &__container {
+    font-family: 'DM Sans';
+    display: flex;
+    flex-direction: column;
+    background: var(--brand-color-white);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    min-width: 280px;
+    padding: 40px 32px 40px 32px !important;
+    font-size: 12px;
+    transition: 0.3s ease-in-out;
+    line-height: 22px;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 4px 4px 20px var(--brand-color-red);
+      cursor: pointer;
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0px 20px 0px 20px;
+  }
+
+  &__receptive {
+    max-width: 400px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+  }
+
+  &__crawler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--brand-color-white);
+    border-radius: 4px;
+    background: var(--brand-color-background3);
+    width: 80px;
+    height: 16px;
+    font-size: 12px;
+    margin-bottom: 20px;
+
+    &--modifier {
+      background: var(--brand-color-background2);
+      width: 130px;
+      font-size: 12px;
+    }
+  }
+
+  &__title {
+    color: var(--brand-color-black);
+    font-size: 12px;
+  }
+
+  &__copy {
+    padding-top: 8px;
+    color: var(--brand-color-gray);
+    margin-bottom: 24px;
+    line-height: 18px;
+  }
+
+  &__break {
+    border: 1px solid var(--brand-color-background);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0px 24px 0px;
+    gap: 12px;
+  }
+
+  &__body-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__program {
+    color: var(--brand-color-pink-label);
+  }
+
+  &__footer {
+    margin-top: 24px;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    line-height: 18px;
+
+    a {
+      text-decoration: none;
+      color: var(--brand-color-gray);
+      font-style: normal;
+      padding-bottom: 35px;
+
+      &:hover {
+        color: var(--brand-color-red);
+        transition: var(--transition);
+        transition-duration: 250ms;
+      }
+    }
+  }
+
+  &__buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 32px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 161.45px;
+    height: 44px;
+    align-items: center;
+    background-color: var(--brand-color-red);
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    color: var(--brand-color-white);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 4px 4px 20px var(--brand-color-red);
+      cursor: pointer;
+    }
+  }
+  &__button--franchise {
+    background-color: var(--brand-color-white);
+    color: var(--brand-color-red);
+  }
+  &__button--franchise:hover,
+  &__button--franchise:focus {
+    background-color: var(--brand-color-button);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 60px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 16%,
+      rgba(255, 245, 246, 1) 0%
+    );
+
+    &__cards-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__container {
+      min-width: 224px;
+      font-size: 14px;
+    }
+
+    &__crawler {
+      width: 73px;
+      height: 28px;
+      font-size: 16px;
+      margin-bottom: 32px;
+      border-radius: 6px;
+
+      &--modifier {
+        width: 138px;
+        font-size: 16px;
+      }
+    }
+
+    &__copy {
+      padding-top: 12px;
+      margin-bottom: 32px;
+      line-height: 23px;
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      margin: 32px 0px 32px 0px;
+      gap: 12px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__footer {
+      margin-top: 32px;
+    }
+
+    &__address {
+      line-height: 26px;
+    }
+
+    &__receptive {
+      max-width: 368px;
+    }
+
+    &__buttons-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0px;
+    }
+
+    &__button {
+      width: 191.45px;
+      height: 44px;
+    }
+
+    &__title-map {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 60px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 16%,
+      rgba(255, 245, 246, 1) 0%
+    );
+
+    &__cards-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__container {
+      min-width: 368px;
+      font-size: 16px;
+      padding: 40px 40px 40px 40px;
+    }
+
+    &__crawler {
+      width: 75.1px;
+      height: 28px;
+      font-size: 16px;
+      margin-bottom: 32px;
+      border-radius: 6px;
+
+      &--modifier {
+        width: 138px;
+        font-size: 16px;
+      }
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__copy {
+      line-height: 29px;
+    }
+
+    &__receptive {
+      max-width: 400px;
+    }
+
+    &__body {
+      line-height: 30px;
+    }
+
+    &__address {
+      line-height: 29px;
+    }
+
+    &__buttons-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0px;
+    }
+
+    &__button {
+      width: 191.45px;
+      height: 44px;
+    }
+
+    &__title-map {
+      font-size: 25px;
+    }
+  }
+}

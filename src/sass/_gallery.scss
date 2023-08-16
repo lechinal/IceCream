@@ -1,0 +1,152 @@
+.gallery {
+  margin: 0px auto;
+}
+
+.gallery__container {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(0deg, #fff 84%, #fff5f6 8%);
+}
+
+.gallery__title {
+  position: absolute;
+  display: none;
+}
+
+.gallery__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 3px;
+}
+
+.gallery__list > li {
+  flex-direction: column;
+}
+
+.gallery {
+  &__list-pictures {
+    border-radius: 8px;
+    margin-bottom: 3px;
+  }
+  &__list-column-first {
+    margin-bottom: 40px;
+  }
+  &__list-column-fourth {
+    margin-top: 60px;
+  }
+  &__list-column-fifth {
+    margin-bottom: 60px;
+  }
+}
+
+.picture-1:hover {
+  transform: scale(1.3) translate(-15px, 10px);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.picture-2:hover {
+  transform: scale(1.3) translate(-15px, -15px);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.picture-3:hover {
+  transform: scale(1.3) translate(-15px, 15px);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.picture-4:hover {
+  transform: scale(1.3) translate(32px, -32px);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.picture-5:hover {
+  transform: scale(1.3) translate(15px, 15px);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.picture-6:hover {
+  transform: scale(1.3) translate(-15px, -15px);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.picture-7:hover {
+  transform: scale(1.3) translate(-15px, 15px);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.picture-8:hover {
+  transform: scale(1.3) translate(-15px, -15px);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.picture-9:hover {
+  transform: scale(1.3) translate(-15px, 15px);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.picture-10:hover {
+  transform: scale(1.3) translate(15px, -22px);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__list {
+    gap: 3px;
+  }
+  .gallery__list-pictures {
+    margin-bottom: 3px;
+    border-radius: 8px;
+  }
+  gallery__list-column-first {
+    margin-bottom: 40px;
+  }
+  gallery__list-column-fourth {
+    margin-top: 30px;
+  }
+  gallery__list-column-fifth {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery__list {
+    gap: 5px;
+  }
+  .gallery__list-pictures {
+    margin-bottom: 5px;
+  }
+  gallery__list-column-first {
+    margin-bottom: 40px;
+  }
+  gallery__list-column-fourth {
+    margin-top: 20px;
+  }
+  gallery__list-column-fifth {
+    margin-bottom: 35px;
+  }
+  gallery__list-column-sixth {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__list {
+    gap: 9px;
+  }
+  .gallery__list-pictures {
+    margin-bottom: 9px;
+    border-radius: 20px;
+  }
+}
